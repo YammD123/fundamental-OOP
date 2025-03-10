@@ -11,36 +11,51 @@ class Hewan4{
     
 }
 
-const Katak = new Hewan4("kodok",4)
-console.log(typeof Hewan4)
-console.log(typeof Katak.bernafas)
-console.log(Katak)
-Katak.bernafas()
-
-
-class Perjumlahan{
-    angka1:number
-
-    constructor(angka1:number){
-        this.angka1=angka1
-    }
-    forloop(){
-        for(let i = this.angka1; i <= 10; i++){
-            console.log(i)
-        }
+class Sapi extends Hewan4{
+    jenis:string
+    constructor(jenis:string,kaki:number,nama:string){
+        super(nama,kaki)
+        this.jenis=jenis
     }
 }
 
-const jumlah = new Perjumlahan(1)
-const jumlah2 = new Perjumlahan(5)
-jumlah.forloop()
-jumlah2.forloop()
+const sapi = new Sapi("sapi",4,"ayam")
+console.log(sapi)
+sapi.bernafas()
 
 
 
-class Hewan41{
-    constructor(public nama:string,public kaki:number){}
-}
 
-const katak = new Hewan41("ayam",2)
-console.log(katak)
+// const Katak = new Hewan4("kodok",4)
+// console.log(typeof Hewan4)
+// console.log(typeof Katak.bernafas)
+// console.log(Katak)
+// Katak.bernafas()
+
+
+// class Perjumlahan{
+//     angka1:number
+
+//     constructor(angka1:number){
+//         this.angka1=angka1
+//     }
+//     forloop(){
+//         for(let i = this.angka1; i <= 10; i++){
+//             console.log(i)
+//         }
+//     }
+// }
+
+// const jumlah = new Perjumlahan(1)
+// const jumlah2 = new Perjumlahan(5)
+// jumlah.forloop()
+// jumlah2.forloop()
+
+
+
+// class Hewan41{
+//     constructor(public nama:string,public kaki:number){}
+// }
+
+// const katak = new Hewan41("ayam",2)
+// console.log(katak)
